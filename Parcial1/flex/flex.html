@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+
+        .contenedor{
+            background-color: blue;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between
+        }
+
+        .caja{
+            border:3px solid red;
+            background-color: bisque;
+        }
+        #caja1 {flex-grow: 25}
+        #caja2 {flex-grow: 25}
+        #caja3 {flex-grow: 25}
+        #caja4 {flex-grow: 25}
+    </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div id="caja1" class="caja"> Caja 1</div>
+            <div id="caja2" class="caja"> Caja 2</div>
+            <div id="caja3" class="caja"> Caja 3</div>
+            <div id="caja4" class="caja"> Caja 4</div>
+        </div>
+    </body>
+</html>

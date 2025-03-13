@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .contenedor{
+            display: grid;
+            background-color: beige;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 20% 80%;
+            grid-template-areas: "barrasup barrasup" 
+                                    "barralat contenido";
+        }
+        .caja{
+            background-color: purple;
+            border: 2px solid aqua;
+        } 
+    #caja1 {grid-area: barrasup}        
+    #caja2 {grid-area: barralat}
+    #caja3 {grid-area: contenido}        
+
+    </style>
+</head>
+    <body>
+        <div class="contenedor">
+            <div id="caja1" class="caja"> Caja 1</div>
+            <div id="caja2" class="caja"> Caja 2</div>
+            <div id="caja3" class="caja"> Caja 3</div>
+        </div>
+    </body>
+</html>

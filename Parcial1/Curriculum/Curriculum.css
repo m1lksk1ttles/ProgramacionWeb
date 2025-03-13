@@ -1,0 +1,23 @@
+
+.Caja{
+    display: inline;
+    text-align: center;
+    flex : 0 0 120;
+}
+
+#TEXTONOMBRE
+{
+    display: inline;
+    font-size: large;
+}
+#textoinfo
+{
+    display: inline;
+    font-size: large;
+}
+ 
+.table,.td, .th{
+border: 1px dotted;
+
+}
+

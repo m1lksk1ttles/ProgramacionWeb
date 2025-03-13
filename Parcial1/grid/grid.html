@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRID</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            .contenedor{
+                background-color: blue;
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                grid-template-rows: 200px 200px 200px;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;   
+                align-content: space-around;
+            }
+            .caja{
+                background-color: aquamarine;
+                border: 2px solid red;
+                width: 100px;
+                height: 100px;
+            }
+
+            #grid{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div id="caja1" class="caja"> caja 1 </div>
+            <div id="caja2" class="caja"> caja 2 </div>
+            <div id="caja3" class="caja"> caja 3 </div>
+            <div id="caja4" class="caja"> caja 4 </div>
+            <div id="caja5" class="caja"> caja 5 </div>
+            <div id="caja6" class="caja"> caja 6 </div>
+            <div id="caja7" class="caja"> caja 7 </div>
+            <div id="caja8" class="caja"> caja 8 </div>
+            <div id="caja9" class="caja"> caja 9 </div>
+        </div>
+    </body>
+</html>

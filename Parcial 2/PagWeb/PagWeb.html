@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kkkk</title>
+        <style>
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: beige;
+                margin: 20px;
+            }
+
+            .najwyższa_zawartość
+            {
+                display:flex;
+            }
+            .cabeza
+            {
+                height: auto;
+                display:block;
+                text-align: center;
+                font-size: 36px;
+                color: orange;
+                background-color: brown;
+                margin: 10px;
+            }
+
+            #FLAGAPOLSKI{
+                display: inline;
+                margin: 10px;
+            }
+            #FLAGATEKST{
+                display: flex;
+            }
+            
+            #piosenka{
+                background-color: brown;
+                color: orange;
+                text-decoration: none;
+                display: inline-block;
+                padding: 6px 12px;
+                margin: 10px;
+                font-size: 14px;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                cursor: pointer;
+                border: 1px solid transparent;
+                border-radius: 12px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <script>
+           window.onload = function()   {
+            const vFoto = document.getElementById('FLAGAPOLSKI');
+
+            vFoto.addEventListener('click', function() {
+                alert('ty dupku, czemu kurwa kliknąłeś na moją flagę?');
+            });
+        };
+        </script>
+
+        <div class="cabeza">Witamy na mojej stronie internetowej</div>
+        <div class="najwyższa_zawartość">
+            <div id="FLAGAPOLSKI"><img src="FLAGAPOLSKI.PNG"></div>
+            <div id="LEWYTEKST">Witam, mam na imię Jaime, jestem z Instytutu Technologicznego w Nuevo Laredo i chcę uczyć się języka polskiego, ponieważ jest to język, który moim zdaniem jest zabawny i interesujący.</div>
+        </div>
+        <div>
+            
+             <a href="https://youtu.be/9hhMUT2U2L4?si=ST6ptAHgXiT02MGv" id="piosenka">piosenka po polsku</a>
+        </div>
+        
+    </body>
+</html>
