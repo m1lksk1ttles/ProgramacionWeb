@@ -1,3 +1,3 @@
-function HOLA(){
-    alert('PURO MUGRE JAVASCRIPT Y NO TONTADAS')
+function CZEŚĆ(){
+    alert('NIE WIEM JAK UŻYWAĆ JAVASCRIPT')
 }
