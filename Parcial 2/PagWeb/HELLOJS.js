@@ -1,0 +1,3 @@
+function HOLA(){
+    alert('PURO MUGRE JAVASCRIPT Y NO TONTADAS')
+}
