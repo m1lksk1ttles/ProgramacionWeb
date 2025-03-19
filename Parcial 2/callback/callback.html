@@ -1,0 +1,25 @@
+<!--Callback: Una funcion que pasa como parametro a otra funcion.-->
+<!--(Eso es pregunta de examen)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documento</title>
+    </head>
+    <body>
+        <script>
+            function proceso( fun){
+                let n = window.prompt("Teclee su nombre:");
+                let a = window.prompt("Teclee su apellido:");
+                fun (n,a);
+            }
+
+            function concatenar(nom,ape){
+                let nomMay = nom+' '+ape;
+                window.alert(nomMay);
+            }
+
+            proceso(concatenar);
+
+        </script>
+    </body>
+</html>
