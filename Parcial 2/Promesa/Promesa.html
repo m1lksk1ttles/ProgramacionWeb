@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documento</title>
+    </head>
+    <body>
+        <script>
+           let miPromesa = new Promesa((resolve, reject) => {
+                let n = window.prompt("Teclee su nombre:");
+                let a = window.prompt("Teclee su apellido:");
+                resolve(n + ' ' + a);
+            });
+
+            function concatenar(nom,ape){
+                /*let nomMay = nom+' '+ape;*/
+                window.alert(nomMay);
+            }
+
+            miPromesa.then(concatenar);
+
+        </script>
+    </body>
+</html>
