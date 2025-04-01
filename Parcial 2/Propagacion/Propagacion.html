@@ -6,25 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="containerOut">
-        <div id="containerPadre">
-             <button id="1">Boton 1</button>
-             <button id="2">Boton 2</button>
-             <button id="3">Boton 3</button>
-             <button id="4">Boton 4</button>
+    <div id="containerPadre">
+        <div id="containerHijo1">
+             <button id="boton1">Boton 1</button>
+             <button id="boton2">Boton 2</button>
+             <button id="boton3">Boton 3</button>
+             <button id="boton4">Boton 4</button>
         </div>
-        <div id="containerHijo">
-            <button id="1">Boton 5</button>
-            <button id="2">Boton 6</button>
-            <button id="3">Boton 7</button>
-            <button id="4">Boton 8</button>
+        <div id="containerHijo2">
+            <button id="boton5">Boton 5</button>
+            <button id="boton6">Boton 6</button>
+            <button id="boton7">Boton 7</button>
+            <button id="boton8">Boton 8</button>
        </div>
     </div>
     <script>
         window.onload = function(){
-            document.getElementById('containerPadre').addEventListener("click",(evento)=>{
-                console.log(evento.target)
-            })
+            document.getElementById('containerHijo1').addEventListener("click",(evento)=>{
+                console.log("click en el contenedor hijo 1");
+            });
+        
+            document.getElementById('containerHijo2').addEventListener("click",(evento)=>{
+                console.log("click en el contenedor hijo 2");
+            });
+        
+            document.getElementById('boton7').addEventListener("click",(evento)=>{
+                console.log("click en el boton");
+                evento.stopPropagation();
+            });
         }
     </script>
 </body>
