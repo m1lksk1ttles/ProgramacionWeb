@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ 
+.contenedor {
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background-color: beige;
+    display:grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 50px;
+    justify-content: left;
+    align-content: top;
+    justify-items:stretch;
+    align-items:stretch;
+    z-index: 0;
+}
+ 
+.caja {
+    text-align:center;
+    border: 1px solid black;
+    background-color:purple;
+    opacity: 1;
+    z-index: 2;
+}
+ 
+#rest{
+    width: 450px;
+    height: 50px;
+}
+#Imagen {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    z-index: 1;
+}
+.active{
+   
+    opacity: 0;
+   
+}
+    </style>
+</head>
+<body>
+    <div id="idcontene" class="contenedor">
+        <img id="Imagen" src="lucasypanfilo.jpg" />
+        <div id="caja1" class="caja"></div>
+        <div id="caja2" class="caja"></div>
+        <div id="caja3" class="caja"></div>
+        <div id="caja4" class="caja"></div>
+        <div id="caja5" class="caja"></div>
+        <div id="caja6" class="caja"></div>
+        <div id="caja7" class="caja"></div>
+        <div id="caja8" class="caja"></div>
+        <div id="caja9" class="caja"></div>
+        <input id="rest" type="button" value="RESETEAR" />
+      </div>
+      <script>
+        const Imagenes= ["lucasypanfilo.jpg", "otiliofeliznoestirado.jpg"  ]
+        const cajas = document.querySelectorAll(".caja");
+        const restBtn = document.getElementById('rest');
+        const imagen = document.getElementById("Imagen");
+        
+        
+        cajas.forEach((caja) => {
+          caja.addEventListener("click", () => {
+            caja.classList.add("active");
+            imagen.style.display = "none";
+          });
+        });
+
+        restBtn.addEventListener('click', () => {
+            cajas.forEach((caja) => {
+                caja.classList.remove("active");
+                
+        });
+        const imagenActual = imagen.getAttribute('src');
+      let nuevaImagen;
+
+      do {
+        nuevaImagen = Imagenes[Math.floor(Math.random() * Imagenes.length)];
+      } while (nuevaImagen === imagenActual && Imagenes.length > 1);
+
+      imagen.setAttribute('src', nuevaImagen);
+        });
+        
+        
+
+      </script>
+</body>
+</html>
