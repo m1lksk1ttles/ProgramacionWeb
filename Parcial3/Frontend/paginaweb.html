@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos de Guitarras</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: beige;
+        }
+         .contenedor{
+            display: grid;
+            align-items: stretch;
+            background-color: beige;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 30% 69%;
+            grid-template-rows: 20% 77.5%;
+            grid-template-areas: "barrasup barrasup" 
+                                    "contenido database";
+        }
+        .caja{
+            align-content: center;
+            text-align: center;
+            background-color: white;
+            border: 2px solid gray;
+        }
+    #caja1 {grid-area: barrasup}        
+    #caja2 {grid-area: contenido}
+    #caja3 {grid-area: database} 
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+            <div id="caja1" class="caja"> <h1>BASE DE DATOS DE LAS GUITARRAS QUE HE TENIDO</h1><p>mas de las que yo pensaba la verdad</p></div>
+            <div id="caja2" class="caja"> Caja 2</div>
+            <div id="caja3" class="caja"> Caja 3</div>
+        </div>
+</body>
+</html>
